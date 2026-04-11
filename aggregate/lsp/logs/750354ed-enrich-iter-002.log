@@ -1,0 +1,55 @@
+[2026-04-11T07:52:38Z] === ENRICH ITERATION 2 START | repo=openai/openai-python sha=750354ed ===
+[2026-04-11T07:52:38Z] [iter=2] PHASE START: enrich repo=openai/openai-python sha=750354ed runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/750354ed-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/750354ed65565b31d0547bf00f4f3180ac1bfeef.nq.gz
+[2026-04-11T07:52:46Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-11T07:53:24Z] [iter=2] AST store loaded triples=4255246 load_secs=37 mem_mb=1055 MB
+[2026-04-11T07:53:24Z] [iter=2] Step 2: Finding LSP targets mem_mb=1055 MB
+[2026-04-11T07:53:37Z] [iter=2] LSP targets found call_sites=15146 imports=2557 extends=2091 implements=0 secs=13
+[2026-04-11T07:53:40Z] [iter=2] Loaded checkpoint partial graph triples=87968
+[2026-04-11T07:53:53Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1055 MB
+[2026-04-11T07:54:17Z] [iter=2] Position index built positions=289304 nodes_with_types=377131 secs=24 mem_mb=1161 MB
+[2026-04-11T07:54:17Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1161 MB already_completed_types=[] already_completed_files=146
+[2026-04-11T07:54:17Z] [iter=2] Resolving target type target_type=call_site count=15146
+[2026-04-11T07:54:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=0 resolved=0 errors=0 current=src/openai/cli/_api/fine_tuning/jobs.py
+[2026-04-11T07:55:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=1 resolved=1 errors=38 current=src/openai/resources/audio/speech.py
+[2026-04-11T07:58:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=3 resolved=12 errors=144 current=src/openai/resources/audio/translations.py
+[2026-04-11T07:59:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.5 files_done=4 resolved=19 errors=163 current=tests/test_auth.py
+[2026-04-11T08:00:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=8 resolved=68 errors=195 current=src/openai/cli/_tools/_main.py
+[2026-04-11T08:02:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=12 resolved=102 errors=279 current=tests/test_utils/test_json.py
+[2026-04-11T08:04:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.9 files_done=14 resolved=135 errors=346 current=src/openai/resources/beta/threads/runs/steps.py
+[2026-04-11T08:05:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=12.6 files_done=15 resolved=153 errors=370 current=src/openai/types/responses/function_shell_tool.py
+[2026-04-11T08:05:55Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=13.3 files_done=19 resolved=171 errors=394 current=src/openai/resources/skills/content.py
+[2026-04-11T08:07:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=14.4 files_done=21 resolved=185 errors=432 current=src/openai/types/eval_update_response.py
+[2026-04-11T08:07:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.2 files_done=25 resolved=221 errors=459 current=src/openai/__init__.py
+[2026-04-11T08:08:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.9 files_done=28 resolved=271 errors=483 current=src/openai/types/audio/transcription_stream_event.py
+[2026-04-11T08:09:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=16.5 files_done=30 resolved=291 errors=501 current=src/openai/lib/streaming/_deltas.py
+[2026-04-11T08:09:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=33 resolved=320 errors=519 current=src/openai/_constants.py
+[2026-04-11T08:10:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=17.9 files_done=36 resolved=327 errors=550 current=examples/realtime/azure_realtime.py
+[2026-04-11T08:11:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=19.0 files_done=40 resolved=341 errors=588 current=src/openai/resources/audio/transcriptions.py
+[2026-04-11T08:12:17Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=19.7 files_done=41 resolved=348 errors=609 current=tests/test_utils/test_logging.py
+[2026-04-11T08:13:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=20.7 files_done=43 resolved=356 errors=645 current=src/openai/types/beta/chatkit/chatkit_thread_user_message_item.py
+[2026-04-11T08:13:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=47 resolved=371 errors=665 current=src/openai/types/beta/realtime/realtime_server_event.py
+[2026-04-11T08:15:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=22.8 files_done=50 resolved=378 errors=716 current=src/openai/_utils/_reflection.py
+[2026-04-11T08:15:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=23.4 files_done=54 resolved=415 errors=734 current=src/openai/resources/fine_tuning/alpha/alpha.py
+[2026-04-11T08:16:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.0 files_done=57 resolved=418 errors=755 current=examples/streaming.py
+[2026-04-11T08:17:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.8 files_done=59 resolved=436 errors=781 current=src/openai/_utils/_proxy.py
+[2026-04-11T08:18:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=25.5 files_done=61 resolved=449 errors=806 current=examples/parsing_tools_stream.py
+[2026-04-11T08:18:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=66 resolved=475 errors=824 current=src/openai/types/responses/tool.py
+[2026-04-11T08:19:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=26.6 files_done=68 resolved=483 errors=842 current=examples/parsing_stream.py
+[2026-04-11T08:20:44Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=28.1 files_done=71 resolved=497 errors=894 current=examples/speech_to_text.py
+[2026-04-11T08:21:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=29.1 files_done=79 resolved=513 errors=929 current=src/openai/types/evals/run_list_response.py
+[2026-04-11T08:22:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=29.9 files_done=82 resolved=516 errors=954 current=src/openai/types/responses/response_content_part_added_event.py
+[2026-04-11T08:23:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=30.5 files_done=87 resolved=522 errors=977 current=src/openai/types/evals/run_cancel_response.py
+[2026-04-11T08:23:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=89 resolved=529 errors=998 current=src/openai/_utils/_compat.py
+[2026-04-11T08:24:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=93 resolved=535 errors=1015 current=src/openai/_extras/numpy_proxy.py
+[2026-04-11T08:24:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=32.2 files_done=96 resolved=547 errors=1032 current=src/openai/types/webhooks/unwrap_webhook_event.py
+[2026-04-11T08:25:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=32.7 files_done=111 resolved=570 errors=1049 current=src/openai/lib/_tools.py
+[2026-04-11T08:25:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=33.2 files_done=118 resolved=579 errors=1066 current=src/openai/cli/_errors.py
+[2026-04-11T08:26:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=33.7 files_done=136 resolved=588 errors=1084 current=src/openai/types/beta/threads/message_content_delta.py
+[2026-04-11T08:26:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=34.2 files_done=153 resolved=592 errors=1101 current=src/openai/types/responses/response_function_shell_tool_call_output.py
+[2026-04-11T08:27:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=34.7 files_done=171 resolved=592 errors=1118 current=src/openai/types/conversations/conversation_item.py
+[2026-04-11T08:27:32Z] [iter=2] Target type resolved target_type=call_site resolved=595 errors=1124 secs=1995 mem_mb=1165 MB
+[2026-04-11T08:27:32Z] [iter=2] Resolving target type target_type=import_statement count=2557
+[2026-04-11T08:27:38Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=35.0 files_completed=646 new_files_this_iter=500 mem_mb=1165 MB
+[2026-04-11T08:27:38Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/750354ed65565b31d0547bf00f4f3180ac1bfeef.nq.gz triples=102140
+[2026-04-11T08:27:40Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-04-11T08:27:40Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=2101 elapsed_min=35.0 files_completed=646
