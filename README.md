@@ -38,11 +38,16 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 .
 ├── aggregate
 │   ├── ast
+│   │   ├── 5ae2cc10e4140d36aa236fa7c0bc5ce5ff190a01
+│   │   │   └── chunk-001.nq.gz
 │   │   └── 750354ed65565b31d0547bf00f4f3180ac1bfeef
 │   │       └── chunk-001.nq.gz
 │   ├── lsp
+│   │   ├── 5ae2cc10e4140d36aa236fa7c0bc5ce5ff190a01.nq.gz
 │   │   └── 750354ed65565b31d0547bf00f4f3180ac1bfeef.nq.gz
 │   └── repolex
+│       ├── 5ae2cc10e4140d36aa236fa7c0bc5ce5ff190a01
+│       │   └── chunk-001.nq.gz
 │       └── 750354ed65565b31d0547bf00f4f3180ac1bfeef
 │           └── chunk-001.nq.gz
 └── blob
@@ -92,6 +97,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 08596ef9ea298c540b7a46ce0112419653936d6d.nq.gz
     ├── 08e1b146014c7d074af2dce096d1fae8751886bd.nq.gz
     ├── 08ea9300c36b09cad2d9d7593ae940748bd36cf6.nq.gz
+    ├── 09016dfedb2d29233e9c431abaf12f97fa9868a1.nq.gz
     ├── 0907c3c2a74fc93abdea0f3c26229fb97dbf58d0.nq.gz
     ├── 09c12876ca66fdf6677fadbddbe62298559b22e6.nq.gz
     ├── 09cd357027867f15c24bff1ec59e0b059e6341c8.nq.gz
@@ -238,13 +244,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 27cb02d64fffc978c2a792fa18875829f6c6908b.nq.gz
     ├── 289d5d44c0f370c4c7ef3af3bc36edbfeccb7e52.nq.gz
     ├── 28e9b1e186af546b5e24aa053f49b47f438823a3.nq.gz
-    ├── 291a93ec656abb9621d80347a1af53178ff0d552.nq.gz
-    ├── 29d8cb16eb7fdf329401c419805dabd7f71aac67.nq.gz
-    ├── 2a0a6c6aa74bf301c4bbaed44a0bffab017f05d7.nq.gz
-    ├── 2a703cac1eda5920aefb02130301e539261db011.nq.gz
-    └── 2a95dce5b369be7195160272a94e7dd5660d640e.nq.gz
+    └── 291a93ec656abb9621d80347a1af53178ff0d552.nq.gz
 
-8 directories, 200 files
+10 directories, 200 files
 ```
 
 | Directory | What it contains |
@@ -264,4 +266,4 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 [openai/openai-python](https://github.com/openai/openai-python)
 
 ---
-*Parsed on 2026-04-11 by [repolex](https://repolex.ai)*
+*Parsed on 2026-09-18 by [repolex](https://repolex.ai)*
