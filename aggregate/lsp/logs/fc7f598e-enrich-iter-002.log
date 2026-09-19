@@ -1,0 +1,17 @@
+[2026-09-19T07:21:52Z] === ENRICH ITERATION 2 START | repo=openai/openai-python sha=fc7f598e ===
+[2026-09-19T07:21:52Z] [iter=2] PHASE START: enrich repo=openai/openai-python sha=fc7f598e runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fc7f598e-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fc7f598efa70c6bef5ad15d1a8c9dfcd0fbd33fa.nq.gz
+[2026-09-19T07:22:05Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-19T07:22:42Z] [iter=2] AST store loaded triples=4183434 load_secs=35 mem_mb=1045 MB
+[2026-09-19T07:22:42Z] [iter=2] Step 2: Finding LSP targets mem_mb=1045 MB
+[2026-09-19T07:22:56Z] [iter=2] LSP targets found call_sites=14591 imports=2256 extends=1811 implements=0 secs=14
+[2026-09-19T07:23:00Z] [iter=2] Loaded checkpoint partial graph triples=96776
+[2026-09-19T07:23:14Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1045 MB
+[2026-09-19T07:23:41Z] [iter=2] Position index built positions=284078 nodes_with_types=370194 secs=27 mem_mb=1243 MB
+[2026-09-19T07:23:41Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1243 MB already_completed_types=['call_site'] already_completed_files=500
+[2026-09-19T07:23:41Z] [iter=2] Skipping target type (completed in previous iteration) target_type=call_site
+[2026-09-19T07:23:41Z] [iter=2] Resolving target type target_type=import_statement count=2256
+[2026-09-19T07:23:42Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=src/openai/types/fine_tuning/jobs/fine_tuning_job_checkpoint.py
+[2026-09-19T07:23:49Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=2.0 files_completed=1000 new_files_this_iter=500 mem_mb=1245 MB
+[2026-09-19T07:23:49Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/fc7f598efa70c6bef5ad15d1a8c9dfcd0fbd33fa.nq.gz triples=100316
+[2026-09-19T07:23:51Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-09-19T07:23:51Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=117 elapsed_min=2.0 files_completed=1000
