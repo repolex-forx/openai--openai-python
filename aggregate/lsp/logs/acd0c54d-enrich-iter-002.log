@@ -1,0 +1,46 @@
+[2026-09-19T01:20:25Z] === ENRICH ITERATION 2 START | repo=openai/openai-python sha=acd0c54d ===
+[2026-09-19T01:20:25Z] [iter=2] PHASE START: enrich repo=openai/openai-python sha=acd0c54d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/acd0c54d-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/acd0c54d8a68efeedde0e5b4e6c310eef1ce7867.nq.gz
+[2026-09-19T01:20:37Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-19T01:21:15Z] [iter=2] AST store loaded triples=4184984 load_secs=36 mem_mb=1057 MB
+[2026-09-19T01:21:15Z] [iter=2] Step 2: Finding LSP targets mem_mb=1057 MB
+[2026-09-19T01:21:28Z] [iter=2] LSP targets found call_sites=14591 imports=2282 extends=1821 implements=0 secs=14
+[2026-09-19T01:21:32Z] [iter=2] Loaded checkpoint partial graph triples=85129
+[2026-09-19T01:21:45Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1057 MB
+[2026-09-19T01:22:12Z] [iter=2] Position index built positions=284199 nodes_with_types=370351 secs=27 mem_mb=1082 MB
+[2026-09-19T01:22:12Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1082 MB already_completed_types=[] already_completed_files=162
+[2026-09-19T01:22:12Z] [iter=2] Resolving target type target_type=call_site count=14591
+[2026-09-19T01:22:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=src/openai/resources/fine_tuning/alpha/graders.py
+[2026-09-19T01:22:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=1 resolved=3 errors=20 current=examples/parsing_stream.py
+[2026-09-19T01:25:29Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=5 resolved=67 errors=111 current=src/openai/types/responses/response_function_shell_tool_call.py
+[2026-09-19T01:26:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=7 resolved=70 errors=138 current=tests/test_extract_files.py
+[2026-09-19T01:26:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.4 files_done=10 resolved=88 errors=155 current=src/openai/_utils/_logs.py
+[2026-09-19T01:27:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=12 resolved=104 errors=185 current=tests/api_resources/realtime/test_client_secrets.py
+[2026-09-19T01:28:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=13 resolved=107 errors=209 current=examples/responses/background_streaming_async.py
+[2026-09-19T01:29:09Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=15 resolved=115 errors=237 current=examples/responses/background_streaming.py
+[2026-09-19T01:30:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.0 files_done=17 resolved=129 errors=280 current=tests/utils.py
+[2026-09-19T01:31:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=19 resolved=170 errors=304 current=src/openai/cli/_api/fine_tuning/jobs.py
+[2026-09-19T01:32:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.8 files_done=20 resolved=172 errors=342 current=src/openai/resources/chat/chat.py
+[2026-09-19T01:33:14Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=12.8 files_done=24 resolved=196 errors=377 current=examples/parsing_tools_stream.py
+[2026-09-19T01:34:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=14.0 files_done=29 resolved=218 errors=418 current=noxfile.py
+[2026-09-19T01:35:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=14.9 files_done=35 resolved=240 errors=450 current=src/openai/lib/_tools.py
+[2026-09-19T01:35:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=37 resolved=254 errors=469 current=src/openai/resources/uploads/parts.py
+[2026-09-19T01:36:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=16.0 files_done=38 resolved=258 errors=487 current=src/openai/resources/skills/content.py
+[2026-09-19T01:36:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=16.5 files_done=41 resolved=263 errors=506 current=examples/uploads.py
+[2026-09-19T01:37:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=17.3 files_done=45 resolved=289 errors=532 current=src/openai/resources/completions.py
+[2026-09-19T01:38:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.0 files_done=48 resolved=305 errors=556 current=examples/responses/background_async.py
+[2026-09-19T01:38:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=51 resolved=317 errors=575 current=tests/test_utils/test_logging.py
+[2026-09-19T01:39:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=56 resolved=329 errors=602 current=examples/realtime/realtime.py
+[2026-09-19T01:40:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=19.9 files_done=60 resolved=335 errors=622 current=examples/text_to_speech.py
+[2026-09-19T01:40:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=20.4 files_done=66 resolved=348 errors=640 current=examples/responses/streaming.py
+[2026-09-19T01:41:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.0 files_done=78 resolved=359 errors=659 current=examples/responses_input_tokens.py
+[2026-09-19T01:42:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.9 files_done=84 resolved=369 errors=690 current=src/openai/types/fine_tuning/alpha/grader_run_response.py
+[2026-09-19T01:42:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=92 resolved=376 errors=708 current=src/openai/types/webhooks/unwrap_webhook_event.py
+[2026-09-19T01:43:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=22.9 files_done=107 resolved=383 errors=726 current=src/openai/types/realtime/realtime_client_event.py
+[2026-09-19T01:43:52Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=23.5 files_done=125 resolved=391 errors=744 current=src/openai/types/responses/response_content_part_added_event.py
+[2026-09-19T01:44:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.0 files_done=146 resolved=396 errors=762 current=src/openai/types/chat/parsed_chat_completion.py
+[2026-09-19T01:44:45Z] [iter=2] Target type resolved target_type=call_site resolved=398 errors=774 secs=1353 mem_mb=1083 MB
+[2026-09-19T01:44:45Z] [iter=2] Resolving target type target_type=import_statement count=2282
+[2026-09-19T01:44:53Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=24.5 files_completed=662 new_files_this_iter=500 mem_mb=1083 MB
+[2026-09-19T01:44:53Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/acd0c54d8a68efeedde0e5b4e6c310eef1ce7867.nq.gz triples=95625
+[2026-09-19T01:44:54Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-09-19T01:44:54Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=1467 elapsed_min=24.5 files_completed=662
