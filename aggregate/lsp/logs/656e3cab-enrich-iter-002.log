@@ -1,0 +1,20 @@
+[2026-09-20T01:06:15Z] === ENRICH ITERATION 2 START | repo=openai/openai-python sha=656e3cab ===
+[2026-09-20T01:06:15Z] [iter=2] PHASE START: enrich repo=openai/openai-python sha=656e3cab runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/656e3cab-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/656e3cab4a18262a49b961d41293367e45ee71b9.nq.gz
+[2026-09-20T01:06:31Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-20T01:07:08Z] [iter=2] AST store loaded triples=4102542 load_secs=35 mem_mb=1066 MB
+[2026-09-20T01:07:08Z] [iter=2] Step 2: Finding LSP targets mem_mb=1066 MB
+[2026-09-20T01:07:21Z] [iter=2] LSP targets found call_sites=14385 imports=2005 extends=1570 implements=0 secs=13
+[2026-09-20T01:07:24Z] [iter=2] Loaded checkpoint partial graph triples=89029
+[2026-09-20T01:07:38Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1066 MB
+[2026-09-20T01:08:04Z] [iter=2] Position index built positions=278180 nodes_with_types=362498 secs=27 mem_mb=1066 MB
+[2026-09-20T01:08:04Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1066 MB already_completed_types=['call_site'] already_completed_files=500
+[2026-09-20T01:08:04Z] [iter=2] Skipping target type (completed in previous iteration) target_type=call_site
+[2026-09-20T01:08:04Z] [iter=2] Resolving target type target_type=import_statement count=2005
+[2026-09-20T01:08:05Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=src/openai/types/chat/chat_completion_content_part_image.py
+[2026-09-20T01:08:11Z] [iter=2] Target type resolved target_type=import_statement resolved=619 errors=0 secs=7 mem_mb=1066 MB
+[2026-09-20T01:08:11Z] [iter=2] Resolving target type target_type=extends_clause count=1570
+[2026-09-20T01:08:15Z] [iter=2] Target type resolved target_type=extends_clause resolved=648 errors=0 secs=4 mem_mb=1066 MB
+[2026-09-20T01:08:49Z] [iter=2] Step 5: Writing final enrichment file triples=232196
+[2026-09-20T01:08:54Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/656e3cab4a18262a49b961d41293367e45ee71b9.nq.gz size_kb=6063
+[2026-09-20T01:08:54Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-09-20T01:08:54Z] [iter=2] PHASE END: enrich elapsed_s=159 elapsed_min=2.6 total_triples=232196
