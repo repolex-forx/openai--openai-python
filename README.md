@@ -42,6 +42,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 15afa21e54952c06e2ac4d3e3a82f144c2cf9ed9
 │   │   │   └── chunk-001.nq.gz
+│   │   ├── 3e0c05b84a2056870abf3bd6a5e7849020209cc3
+│   │   │   └── chunk-001.nq.gz
 │   │   ├── 481ff6ef4c050469fa971746fb14b675d90a2e56
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 5ae2cc10e4140d36aa236fa7c0bc5ce5ff190a01
@@ -61,6 +63,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   ├── lsp
 │   │   ├── 0a4ca536f356aa23a021962b442d0c187559326d.nq.gz
 │   │   ├── 15afa21e54952c06e2ac4d3e3a82f144c2cf9ed9.nq.gz
+│   │   ├── 3e0c05b84a2056870abf3bd6a5e7849020209cc3.nq.gz
 │   │   ├── 481ff6ef4c050469fa971746fb14b675d90a2e56.nq.gz
 │   │   ├── 5ae2cc10e4140d36aa236fa7c0bc5ce5ff190a01.nq.gz
 │   │   ├── 656e3cab4a18262a49b961d41293367e45ee71b9.nq.gz
@@ -73,6 +76,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │       ├── 0a4ca536f356aa23a021962b442d0c187559326d
 │       │   └── chunk-001.nq.gz
 │       ├── 15afa21e54952c06e2ac4d3e3a82f144c2cf9ed9
+│       │   └── chunk-001.nq.gz
+│       ├── 3e0c05b84a2056870abf3bd6a5e7849020209cc3
 │       │   └── chunk-001.nq.gz
 │       ├── 481ff6ef4c050469fa971746fb14b675d90a2e56
 │       │   └── chunk-001.nq.gz
@@ -167,6 +172,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 0be935c54d00b810ae00f3c99745be3bf54126db.nq.gz
     ├── 0cf2bd2fd9d04040ba557f3f6658e6c4134d26d4.nq.gz
     ├── 0cfff85dad92f7ec8f7c698ac7ea435a143ab6cc.nq.gz
+    ├── 0d4ef7b71c403f5d8d580e5f4bdc73519d962956.nq.gz
     ├── 0da88c679c27f27642b9162a17780c8930cc3bdc.nq.gz
     ├── 0db7d8ff79c60cf2503785d0cd6c7bf4193e55df.nq.gz
     ├── 0dbcc90f3999d7537fa8c0674de0efa0280b145c.nq.gz
@@ -256,13 +262,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 1a73bb0c7ec3aa731965b64ffd3f6c9c557d331c.nq.gz
     ├── 1a92d912facbc602d271b8e346e52b595d7df1a1.nq.gz
     ├── 1b04cb62ba08595293e32466561cfbf888457774.nq.gz
-    ├── 1b8d4a4d812de13335d41a097fa19b6f6d5e562a.nq.gz
-    ├── 1baddbfc2c87ebc1c24c8e3fe0c4df763552c9ce.nq.gz
-    ├── 1bcd48aace746d44f8250e888d0457fe732b1423.nq.gz
-    ├── 1bd4c74eb0c996d2497ee7596ab35fb4bc7a64d1.nq.gz
-    └── 1bde6858b1a6d401297ab8f5c19ea0343fb34332.nq.gz
+    └── 1b8d4a4d812de13335d41a097fa19b6f6d5e562a.nq.gz
 
-26 directories, 200 files
+28 directories, 200 files
 ```
 
 | Directory | What it contains |
@@ -282,4 +284,4 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 [openai/openai-python](https://github.com/openai/openai-python)
 
 ---
-*Parsed on 2026-09-20 by [repolex](https://repolex.ai)*
+*Parsed on 2026-09-21 by [repolex](https://repolex.ai)*
