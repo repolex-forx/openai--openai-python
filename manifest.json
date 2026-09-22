@@ -17332,6 +17332,176 @@
         "blob/3dba1448498ebb7ea12d72483a9cd993f13fa9ce.nq.gz",
         "blob/5e5a469e8d266f727a70adcf467defb6c93b3591.nq.gz",
         "blob/3c121097e52d400f00a1a874d4ea3d82a6e5d144.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/f2d096fe978a1fe67f58351ddbfa0d38f3d723b9.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "httpx",
+          "ecosystem": "PYPI",
+          "version": "0.23.0",
+          "githubOrg": "encode",
+          "githubRepo": "httpx",
+          "githubCommit": "89cdd903b2f339c6ae319773c31b8c9352bd9cd8",
+          "githubTag": "0.23.0",
+          "githubUrl": "https://github.com/encode/httpx",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "pydantic",
+          "ecosystem": "PYPI",
+          "version": "1.9.0",
+          "githubOrg": "pydantic",
+          "githubRepo": "pydantic",
+          "githubCommit": "fbf8002cefd1ba7b263f63545fff2e48a378189d",
+          "githubTag": "v1.9.0",
+          "githubUrl": "https://github.com/pydantic/pydantic",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "typing-extensions",
+          "ecosystem": "PYPI",
+          "version": "4.11",
+          "githubOrg": "python",
+          "githubRepo": "typing_extensions",
+          "githubUrl": "https://github.com/python/typing_extensions",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "anyio",
+          "ecosystem": "PYPI",
+          "version": "3.5.0",
+          "githubOrg": "agronholm",
+          "githubRepo": "anyio",
+          "githubCommit": "ac3e7c619913bd0ddf9c36b6e633b278d07405b7",
+          "githubTag": "3.5.0",
+          "githubUrl": "https://github.com/agronholm/anyio",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "distro",
+          "ecosystem": "PYPI",
+          "version": "1.7.0",
+          "githubOrg": "python-distro",
+          "githubRepo": "distro",
+          "githubCommit": "697b2dbb20ab12cb86becf57f062645de723d5ac",
+          "githubTag": "v1.7.0",
+          "githubUrl": "https://github.com/python-distro/distro",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "sniffio",
+          "ecosystem": "PYPI",
+          "version": "1.3.1",
+          "githubOrg": "python-trio",
+          "githubRepo": "sniffio",
+          "githubCommit": "ae020e13b98d276a6558ffc25e82509fd4c288f0",
+          "githubTag": "v1.3.1",
+          "githubUrl": "https://github.com/python-trio/sniffio",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "tqdm",
+          "ecosystem": "PYPI",
+          "version": "4",
+          "githubOrg": "tqdm",
+          "githubRepo": "tqdm",
+          "githubUrl": "https://github.com/tqdm/tqdm",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "jiter",
+          "ecosystem": "PYPI",
+          "version": "0.10.0",
+          "githubOrg": "pydantic",
+          "githubRepo": "jiter",
+          "githubCommit": "4f0651417714fef98db51ad4b53ea18278fc4fcc",
+          "githubTag": "v0.10.0",
+          "githubUrl": "https://github.com/pydantic/jiter",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "aiohttp",
+          "ecosystem": "PYPI",
+          "version": "3.14.3",
+          "githubOrg": "aio-libs",
+          "githubRepo": "aiohttp",
+          "githubCommit": "5e392ce0456f5235a4ee6ad46f0e806df2f15873",
+          "githubTag": "v3.14.3",
+          "githubUrl": "https://github.com/aio-libs/aiohttp",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "httpx-aiohttp",
+          "ecosystem": "PYPI",
+          "version": "0.1.9",
+          "githubOrg": "karpetrosyan",
+          "githubRepo": "httpx-aiohttp",
+          "githubCommit": "2fcfccd91211bc5e65abcc396e058e8de423136a",
+          "githubTag": "0.1.9",
+          "githubUrl": "https://github.com/karpetrosyan/httpx-aiohttp",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "websockets",
+          "ecosystem": "PYPI",
+          "version": "13",
+          "githubOrg": "python-websockets",
+          "githubRepo": "websockets",
+          "githubUrl": "https://github.com/python-websockets/websockets",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "numpy",
+          "ecosystem": "PYPI",
+          "version": "1",
+          "githubOrg": "numpy",
+          "githubRepo": "numpy",
+          "githubUrl": "https://github.com/numpy/numpy",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "pandas",
+          "ecosystem": "PYPI",
+          "version": "1.2.3",
+          "githubOrg": "pandas-dev",
+          "githubRepo": "pandas",
+          "githubCommit": "f2c8480af2f25efdbd803218b9d87980f416563e",
+          "githubTag": "v1.2.3",
+          "githubUrl": "https://github.com/pandas-dev/pandas",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "pandas-stubs",
+          "ecosystem": "PYPI",
+          "version": "1.1.0.11",
+          "githubOrg": "pandas-dev",
+          "githubRepo": "pandas-stubs",
+          "githubUrl": "https://github.com/pandas-dev/pandas-stubs",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "sounddevice",
+          "ecosystem": "PYPI",
+          "version": "0.5.1",
+          "githubOrg": "spatialaudio",
+          "githubRepo": "python-sounddevice",
+          "githubCommit": "25894e326fce2dd8b5172624b621c32a3550c5b4",
+          "githubTag": "0.5.1",
+          "githubUrl": "https://github.com/spatialaudio/python-sounddevice",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "rich",
+          "ecosystem": "PYPI",
+          "version": "15.0.0",
+          "githubOrg": "Textualize",
+          "githubRepo": "rich",
+          "githubCommit": "6ac483cbea39cab124dfd3483bba70ffafb71050",
+          "githubTag": "v15.0.0",
+          "githubUrl": "https://github.com/Textualize/rich",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.14/site-packages/rich/__init__.py"
+        }
       ]
     }
   ],
