@@ -17502,7 +17502,12 @@
           "source": "lsp",
           "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.14/site-packages/rich/__init__.py"
         }
-      ]
+      ],
+      "ast": [
+        "aggregate/ast/f2d096fe978a1fe67f58351ddbfa0d38f3d723b9/chunk-001.nq.gz"
+      ],
+      "repolex": "aggregate/repolex/f2d096fe978a1fe67f58351ddbfa0d38f3d723b9/chunk-001.nq.gz",
+      "dep": "dep/f2d096fe978a1fe67f58351ddbfa0d38f3d723b9.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
