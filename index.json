@@ -1,5 +1,66 @@
 {
   "org": "openai",
   "repo": "openai-python",
-  "versions": []
+  "versions": [
+    {
+      "commit": "f2d096fe978a1fe67f58351ddbfa0d38f3d723b9",
+      "tag": "v2.20.0",
+      "parsed_at": "2026-09-24T11:30:08.489153+00:00"
+    },
+    {
+      "commit": "3e0c05b84a2056870abf3bd6a5e7849020209cc3",
+      "tag": "v2.21.0",
+      "parsed_at": "2026-09-20T13:15:04.846721+00:00"
+    },
+    {
+      "commit": "481ff6ef4c050469fa971746fb14b675d90a2e56",
+      "tag": "v2.22.0",
+      "parsed_at": "2026-09-20T06:18:52.270149+00:00"
+    },
+    {
+      "commit": "921c330d4baebb04bbdb8070e9ced539cf49d97a",
+      "tag": "v2.23.0",
+      "parsed_at": "2026-09-20T01:27:11.705770+00:00"
+    },
+    {
+      "commit": "656e3cab4a18262a49b961d41293367e45ee71b9",
+      "tag": "v2.24.0",
+      "parsed_at": "2026-09-19T20:51:03.573078+00:00"
+    },
+    {
+      "commit": "9b1bb6ee10d4a0a04d04b1f67907f3747c57f5a2",
+      "tag": "v2.25.0",
+      "parsed_at": "2026-09-19T16:13:31.499858+00:00"
+    },
+    {
+      "commit": "15afa21e54952c06e2ac4d3e3a82f144c2cf9ed9",
+      "tag": "v2.26.0",
+      "parsed_at": "2026-09-19T11:33:31.341362+00:00"
+    },
+    {
+      "commit": "0a4ca536f356aa23a021962b442d0c187559326d",
+      "tag": "v2.27.0",
+      "parsed_at": "2026-09-19T07:51:49.868213+00:00"
+    },
+    {
+      "commit": "fc7f598efa70c6bef5ad15d1a8c9dfcd0fbd33fa",
+      "tag": "v2.28.0",
+      "parsed_at": "2026-09-19T03:19:50.338981+00:00"
+    },
+    {
+      "commit": "acd0c54d8a68efeedde0e5b4e6c310eef1ce7867",
+      "tag": "v2.29.0",
+      "parsed_at": "2026-09-18T19:12:06.605657+00:00"
+    },
+    {
+      "commit": "5ae2cc10e4140d36aa236fa7c0bc5ce5ff190a01",
+      "tag": "v2.30.0",
+      "parsed_at": "2026-09-18T05:09:41.529216+00:00"
+    },
+    {
+      "commit": "750354ed65565b31d0547bf00f4f3180ac1bfeef",
+      "tag": "v2.31.0",
+      "parsed_at": "2026-04-11T03:28:46.540819+00:00"
+    }
+  ]
 }
