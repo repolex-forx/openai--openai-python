@@ -19287,7 +19287,9 @@
           "githubUrl": "https://github.com/spatialaudio/python-sounddevice",
           "source": "build_file:pyproject.toml"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/1c6d3d27c24a708fc5b4b2c4a743f08ff4978c35/chunk-001.nq.gz",
+      "dep": "dep/1c6d3d27c24a708fc5b4b2c4a743f08ff4978c35.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
