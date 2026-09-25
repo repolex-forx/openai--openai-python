@@ -3,6 +3,11 @@
   "repo": "openai-python",
   "versions": [
     {
+      "commit": "1c6d3d27c24a708fc5b4b2c4a743f08ff4978c35",
+      "tag": "v2.19.0",
+      "parsed_at": "2026-09-25T07:12:52.364887+00:00"
+    },
+    {
       "commit": "f2d096fe978a1fe67f58351ddbfa0d38f3d723b9",
       "tag": "v2.20.0",
       "parsed_at": "2026-09-24T11:30:08.489153+00:00"

@@ -6,29 +6,27 @@ RDF knowledge graph data for [openai/openai-python](https://github.com/openai/op
 
 ## How to use this data
 
-The easiest way to get started is to install the [lexq](https://github.com/repolex-ai/lexq) query tool using [uv](https://docs.astral.sh/uv/getting-started/installation/).
-
-If you have uv installed, just copy/paste this into your terminal:
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
 
 ```bash
-uv tool install git+https://github.com/repolex-ai/lexq
+cargo install --git https://github.com/repolex-ai/rlex
 ```
 
-This installs lexq onto your system, in your user context. Verify the install:
+Verify the install:
 
 ```bash
-lexq --help
+rlex --help
 ```
 
-**lexq is designed to be used primarily by LLMs in a terminal.** Start up your favorite LLM and ask it to use the lexq tool. It's that easy!
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
 
 To load this repo's data:
 
 ```bash
-lexq download openai/openai-python
+rlex download openai/openai-python
 ```
 
-This will automatically download essential data files from the last parsed commit. Consult `lexq --moreinfo` for other options, including downloading multiple commits, blobs, etc.
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
 
 ## Data structure
 
@@ -41,6 +39,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   ├── 0a4ca536f356aa23a021962b442d0c187559326d
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 15afa21e54952c06e2ac4d3e3a82f144c2cf9ed9
+│   │   │   └── chunk-001.nq.gz
+│   │   ├── 1c6d3d27c24a708fc5b4b2c4a743f08ff4978c35
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 3e0c05b84a2056870abf3bd6a5e7849020209cc3
 │   │   │   └── chunk-001.nq.gz
@@ -65,6 +65,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   ├── lsp
 │   │   ├── 0a4ca536f356aa23a021962b442d0c187559326d.nq.gz
 │   │   ├── 15afa21e54952c06e2ac4d3e3a82f144c2cf9ed9.nq.gz
+│   │   ├── 1c6d3d27c24a708fc5b4b2c4a743f08ff4978c35.nq.gz
 │   │   ├── 3e0c05b84a2056870abf3bd6a5e7849020209cc3.nq.gz
 │   │   ├── 481ff6ef4c050469fa971746fb14b675d90a2e56.nq.gz
 │   │   ├── 5ae2cc10e4140d36aa236fa7c0bc5ce5ff190a01.nq.gz
@@ -79,6 +80,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │       ├── 0a4ca536f356aa23a021962b442d0c187559326d
 │       │   └── chunk-001.nq.gz
 │       ├── 15afa21e54952c06e2ac4d3e3a82f144c2cf9ed9
+│       │   └── chunk-001.nq.gz
+│       ├── 1c6d3d27c24a708fc5b4b2c4a743f08ff4978c35
 │       │   └── chunk-001.nq.gz
 │       ├── 3e0c05b84a2056870abf3bd6a5e7849020209cc3
 │       │   └── chunk-001.nq.gz
@@ -200,6 +203,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 0fc71749e90e9eb20067f0bc671cc76d71915906.nq.gz
     ├── 1033c319d4a963fc84c98fa81c765f8d5c48d751.nq.gz
     ├── 1065632910696eaa89305338920fd9adc7861793.nq.gz
+    ├── 1088aab38001befe99cd87faafca496d5e66d8fa.nq.gz
     ├── 118f0b5f720784e6f2be2ad5c22ae4535963dd7b.nq.gz
     ├── 11a2dfccbd6be1fb477576ab88a6a43379d12704.nq.gz
     ├── 122ee10078a57dfa8bcad62357af217c9e2dd290.nq.gz
@@ -260,13 +264,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 193109f3ad2b3c00e59ad3f41ad32d9f704f5f23.nq.gz
     ├── 193c99328a7281698cb7a57ff8058d56716d9e66.nq.gz
     ├── 1948f8933b064d1f245ab4f81bdefd1fa5e2741a.nq.gz
-    ├── 194e3f7d6a795b04ae65e2ecff955cef3d76748f.nq.gz
-    ├── 197e39e7e96ea65c53264d24750144ad48fa6c16.nq.gz
-    ├── 19c73b909bc114789925c17fca14b11f22a3cf80.nq.gz
-    ├── 1a178384db9b3139cd468c25060ab9751bd19947.nq.gz
-    └── 1a22eb60cc2e3293a8aa7df03156afb231784f6c.nq.gz
+    └── 194e3f7d6a795b04ae65e2ecff955cef3d76748f.nq.gz
 
-30 directories, 200 files
+32 directories, 200 files
 ```
 
 | Directory | What it contains |
@@ -280,10 +280,11 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 | `branch/` | Branch metadata. |
 | `tag/` | Tag metadata. |
 | `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
 
 ## Source repository
 
 [openai/openai-python](https://github.com/openai/openai-python)
 
 ---
-*Parsed on 2026-09-24 by [repolex](https://repolex.ai)*
+*Parsed on 2026-09-25 by [repolex](https://repolex.ai)*
